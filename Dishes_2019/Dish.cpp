@@ -46,6 +46,7 @@ Dish::Dish()
 {
 	ingredintsNames = nullptr;
 	cookTime = 0;
+	cntIngredient = 0;
 }
 
 Dish::Dish(char** ingredients, int countIngredients, int CookTime)
