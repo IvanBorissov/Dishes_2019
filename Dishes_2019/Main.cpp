@@ -57,5 +57,10 @@ int main()
 	S2.Print();
 	cout << "/----------------------" << endl;
 
+	delete[] meat;
+	delete[] fish;
+	for (int i = 0; i < 5; i++)delete[] ingr[i];
+	delete[] ingr;
+
 	return 0;
 }
