@@ -32,19 +32,17 @@ MeatDish::MeatDish()
 	Meat = nullptr;
 }
 
-MeatDish::MeatDish(char** ingredients, int countingredients, int cookTime, char* meat)
+MeatDish::MeatDish(char** ingredients, int countingredients, int cookTime, char* meat) : Dish(ingredients, countingredients, cookTime)
 {
 	if (!setMeat(meat))
 	{
 		cout << "invalid Meat type" << endl;
 		return;
 	}
-	Dish::Dish(ingredients, countingredients, cookTime);
 }
 
-MeatDish::MeatDish(const MeatDish& M)
+MeatDish::MeatDish(const MeatDish& M) : Dish(M)
 {
-	Dish::Dish(M);
 	Copy(M);
 }
 
@@ -66,6 +64,6 @@ MeatDish::~MeatDish()
 
 void MeatDish::Print()
 {
-	Dish::print();
+	Dish::Print();
 	cout << Meat << endl;
 }

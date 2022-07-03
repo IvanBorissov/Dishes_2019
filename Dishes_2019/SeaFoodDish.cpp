@@ -25,13 +25,13 @@ SeaFoodDish::SeaFoodDish()
 	seafood = nullptr;
 }
 
-SeaFoodDish::SeaFoodDish(char** ingredients, int countIngredients, int cookTime, char* seaFood)
+SeaFoodDish::SeaFoodDish(char** ingredients, int countIngredients, int cookTime, char* seaFood) : Dish(ingredients, countIngredients, cookTime)
 {
-	Dish::Dish(ingredients, countIngredients, cookTime);
+	//Dish::Dish(ingredients, countIngredients, cookTime);
 	setSeaFood(seaFood);
 }
 
-SeaFoodDish::SeaFoodDish(const SeaFoodDish& S)
+SeaFoodDish::SeaFoodDish(const SeaFoodDish& S) : Dish(S)
 {
 	Copy(S);
 }
@@ -54,6 +54,6 @@ SeaFoodDish::~SeaFoodDish()
 
 void SeaFoodDish::Print()
 {
-	Dish::print();
+	Dish::Print();
 	cout << seafood << endl;
 }

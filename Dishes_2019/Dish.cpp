@@ -76,7 +76,7 @@ Dish::~Dish()
 	Erase();
 }
 
-void Dish::print()
+void Dish::Print()
 {
 	for (int i = 0; i < cntIngredient; i++)
 	{

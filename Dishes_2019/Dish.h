@@ -12,9 +12,9 @@ private:
 	void Erase();
 public:
 	Dish();
-	Dish(char**, int, int);
+	Dish( char**, int, int);
 	Dish(const Dish&);
 	Dish& operator=(const Dish&);
 	virtual ~Dish();
-	virtual void print();
+	virtual void Print();
 };
