@@ -2,7 +2,7 @@
 
 #include "Dish.h"
 
-class MeatDish : public Dish
+class MeatDish : virtual public Dish
 {
 private:
 	char* Meat;

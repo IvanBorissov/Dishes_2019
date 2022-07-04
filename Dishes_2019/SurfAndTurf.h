@@ -4,7 +4,7 @@
 #include "MeatDish.h"
 #include "SeaFoodDish.h"
 
-class SurfAndTurf : virtual public MeatDish, virtual public SeaFoodDish
+class SurfAndTurf : public MeatDish, public SeaFoodDish
 {
 public:
 	SurfAndTurf();

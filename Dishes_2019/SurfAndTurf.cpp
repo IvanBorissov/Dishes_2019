@@ -10,7 +10,7 @@ SurfAndTurf::SurfAndTurf() : MeatDish(), SeaFoodDish()
 {
 }
 
-SurfAndTurf::SurfAndTurf(char** ingredients, int countIngredients, int cookTime, char* meat, char* seafood) : MeatDish(ingredients, countIngredients, cookTime, meat), SeaFoodDish(ingredients, countIngredients, cookTime, seafood)
+SurfAndTurf::SurfAndTurf(char** ingredients, int countIngredients, int cookTime, char* meat, char* seafood) : Dish(ingredients, countIngredients, cookTime), MeatDish(ingredients, countIngredients, cookTime, meat), SeaFoodDish(ingredients, countIngredients, cookTime, seafood)
 {
 }
 
