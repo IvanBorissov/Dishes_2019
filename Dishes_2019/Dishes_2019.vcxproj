@@ -142,12 +142,14 @@
     <ClInclude Include="Dish.h" />
     <ClInclude Include="MeatDish.h" />
     <ClInclude Include="SeaFoodDish.h" />
+    <ClInclude Include="SurfAndTurf.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dish.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MeatDish.cpp" />
     <ClCompile Include="SeaFoodDish.cpp" />
+    <ClCompile Include="SurfAndTurf.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

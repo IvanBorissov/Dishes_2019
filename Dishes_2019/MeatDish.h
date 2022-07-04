@@ -17,5 +17,6 @@ public:
 	MeatDish(const MeatDish&);
 	MeatDish& operator=(const MeatDish&);
 	virtual ~MeatDish();
+	void PrintMeat();
 	void Print();
 };

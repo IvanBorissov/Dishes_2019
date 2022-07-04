@@ -52,6 +52,11 @@ SeaFoodDish::~SeaFoodDish()
 	Erase();
 }
 
+void SeaFoodDish::PrintSeaFood()
+{
+	cout << seafood << endl;
+}
+
 void SeaFoodDish::Print()
 {
 	Dish::Print();

@@ -62,6 +62,11 @@ MeatDish::~MeatDish()
 	Erase();
 }
 
+void MeatDish::PrintMeat()
+{
+	cout << Meat << endl;
+}
+
 void MeatDish::Print()
 {
 	Dish::Print();

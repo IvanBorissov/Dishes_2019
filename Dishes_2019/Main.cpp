@@ -2,6 +2,7 @@
 #include "Dish.h"
 #include "MeatDish.h"
 #include "SeaFoodDish.h"
+#include "SurfAndTurf.h"
 using namespace std;
 
 int main()
@@ -57,6 +58,16 @@ int main()
 	S2.Print();
 	cout << "/----------------------" << endl;
 
+	SurfAndTurf Surf(ingr, 5, 50, meat, fish);
+
+	Surf.Print();
+	cout << "/---------------------------" << endl;
+
+	Dish* DishPtr = new MeatDish(ingr, 5, 40, meat);
+
+	DishPtr->Print();
+
+	delete DishPtr;
 	delete[] meat;
 	delete[] fish;
 	for (int i = 0; i < 5; i++)delete[] ingr[i];

@@ -17,5 +17,6 @@ public:
 	SeaFoodDish& operator=(const SeaFoodDish&);
 	virtual ~SeaFoodDish();
 	
+	void PrintSeaFood();
 	void Print();
 };
